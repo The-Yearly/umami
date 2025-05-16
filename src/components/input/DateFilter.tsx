@@ -37,7 +37,7 @@ export function DateFilter({
     { label: formatMessage(labels.today), value: '0day' },
     {
       label: formatMessage(labels.lastHours, { x: 24 }),
-      value: '24hour',
+      value: '25hour',
     },
     {
       label: formatMessage(labels.thisWeek),
@@ -46,7 +46,7 @@ export function DateFilter({
     },
     {
       label: formatMessage(labels.lastDays, { x: 7 }),
-      value: '7day',
+      value: '8day',
     },
     {
       label: formatMessage(labels.thisMonth),
@@ -55,11 +55,11 @@ export function DateFilter({
     },
     {
       label: formatMessage(labels.lastDays, { x: 30 }),
-      value: '30day',
+      value: '31day',
     },
     {
       label: formatMessage(labels.lastDays, { x: 90 }),
-      value: '90day',
+      value: '91day',
     },
     { label: formatMessage(labels.thisYear), value: '0year', divider: true },
     {
@@ -121,7 +121,6 @@ export function DateFilter({
 
     return options.find(e => e.value === value)?.label;
   };
-
   return (
     <>
       <Dropdown
