@@ -37,7 +37,7 @@ export function DateFilter({
     { label: formatMessage(labels.today), value: '0day' },
     {
       label: formatMessage(labels.lastHours, { x: 24 }),
-      value: '25hour',
+      value: '24hour',
     },
     {
       label: formatMessage(labels.thisWeek),
@@ -64,11 +64,11 @@ export function DateFilter({
     { label: formatMessage(labels.thisYear), value: '0year', divider: true },
     {
       label: formatMessage(labels.lastMonths, { x: 6 }),
-      value: '6month',
+      value: '7month',
     },
     {
       label: formatMessage(labels.lastMonths, { x: 12 }),
-      value: '12month',
+      value: '13month',
     },
     showAllTime && {
       label: formatMessage(labels.allTime),
